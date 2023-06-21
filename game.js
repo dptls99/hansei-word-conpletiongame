@@ -529,7 +529,3 @@ function startGame() {
   }
   
 
-  function focusInput() {
-    const inputElement = document.getElementById('input');
-    inputElement.focus();
-  }
