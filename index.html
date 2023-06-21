@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>네글자 줄줄이 완성게임</title>
+</head>
+<body>
+  <h1>네글자 줄줄이 완성게임</h1>
+  <p>앞의 2글자를 보고 뒤의 2글자를 맞춰보세요.</p>
+  
+  <div id="wordContainer">
+    <!-- 단어 표시를 위한 공간 -->
+  </div>
+  
+  <input type="text" id="guessInput" placeholder="뒤의 2글자를 입력하세요.">
+  <button id= "confirm" onclick="checkGuess()">확인</button>
+  <button id="startButton" onclick="startGame()">게임 시작</button>
+  <button id="restartButton" onclick="startGame()" style="display: none;">다시 시작</button>
+  
+  <p id="resultMessage"></p>
+  <p id="score"></p>
+  
+  <select id="timeLimit" onchange="selectTimeLimit()">
+    <option value="3">3초</option>
+    <option value="6">6초</option>
+  </select>
+  
+  <script src="game.js"></script>
+  <script>
+    var input = document.getElementById("guessInput");
+
+    input.addEventListener("keydown", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("confirm").click();
+        // console.log("눌림" , eventcode)
+      }
+    });
+  </script>
+</body>
+</html>

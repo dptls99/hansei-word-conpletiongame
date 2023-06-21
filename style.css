@@ -1,0 +1,66 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fafafa;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 0;
+    color: #3f51b5;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  #wordContainer {
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"] {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #restartButton {
+    display: none;
+  }
+  
+  #resultMessage {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  #score {
+    font-size: 1.2rem;
+  }
+  
+  select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
